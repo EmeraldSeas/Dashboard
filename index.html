@@ -6,17 +6,32 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<!--Use grid (all img to be replaced with svg)-->
+<!--Use grid-->
 <main class="container">
+<!--  Use flexbox-->
   <div class="top">
     <div class="search-login">
       <div class="searchbar">
-        <img src="" alt="" class="searchbar-img">
+        <img src="img/icons/search_FILL0_wght400_GRAD0_opsz48.svg" alt="" class="searchbar-img">
         <input type="search" class="searchbar">
       </div>
       <div class="login">
-
+        <img src="img/icons/notifications_FILL0_wght400_GRAD0_opsz48.svg" alt="" class="notifications">
+        <img src="" alt="" class="user-icon">
+        <div class="username">Nigel Whipple</div>
       </div>
+    </div>
+    <div class="user-options">
+      <div class="user-image">
+        <img src="" alt="" class="user-icon big">
+        <div class="user-greeting">
+          <p>Hi there,</p>
+          <p>Nigel Whipple (@nigel)</p>
+        </div>
+      </div>
+      <button class="new">New</button>
+      <button class="upload">Upload</button>
+      <button class="share">Share</button>
     </div>
   </div>
 <!--  Use flexbox-->
@@ -27,41 +42,41 @@
     </nav>
     <nav class="navbar">
       <nav class="home">
-        <img src="" alt="" class="home-img">
+        <img src="img/icons/home_FILL0_wght400_GRAD0_opsz48.svg" alt="" class="home-img">
         <a href="" class="home-link"></a>
       </nav>
       <nav class="profile">
-        <img src="" alt="" class="profile-img">
+        <img src="img/icons/badge_FILL0_wght400_GRAD0_opsz48.svg" alt="" class="profile-img">
         <a href="" class="profile-link"></a>
       </nav>
       <nav class="messages">
-        <img src="" alt="" class="messages-img">
+        <img src="img/icons/mode_comment_FILL0_wght400_GRAD0_opsz48.svg" alt="" class="messages-img">
         <a href="" class="messages-link"></a>
       </nav>
       <nav class="history">
-        <img src="" alt="" class="history-img">
+        <img src="img/icons/history_FILL0_wght400_GRAD0_opsz48.svg" alt="" class="history-img">
         <a href="" class="history-link"></a>
       </nav>
       <nav class="tasks">
-        <img src="" alt="" class="tasks-img">
+        <img src="img/icons/task_FILL0_wght400_GRAD0_opsz48.svg" alt="" class="tasks-img">
         <a href="" class="tasks-link"></a>
       </nav>
       <nav class="communities">
-        <img src="" alt="" class="communities-img">
+        <img src="img/icons/groups_FILL0_wght400_GRAD0_opsz48.svg" alt="" class="communities-img">
         <a href="" class="communities-link"></a>
       </nav>
     </nav>
     <nav class="support-bar">
       <nav class="settings">
-        <img src="" alt="" class="settings-img">
+        <img src="img/icons/settings_FILL0_wght400_GRAD0_opsz48.svg" alt="" class="settings-img">
         <a href="" class="settings-link"></a>
       </nav>
       <nav class="support">
-        <img src="" alt="" class="support-img">
+        <img src="img/icons/live_help_FILL0_wght400_GRAD0_opsz48.svg" alt="" class="support-img">
         <a href="" class="support-link"></a>
       </nav>
       <nav class="privacy">
-        <img src="" alt="" class="privacy-img">
+        <img src="img/icons/verified_user_FILL0_wght400_GRAD0_opsz48.svg" alt="" class="privacy-img">
         <a href="" class="privacy-link"></a>
       </nav>
     </nav>
@@ -70,31 +85,75 @@
   <div class="content">
 <!--    Use grid-->
     <div class="projects">
-      <div class="card-projects"></div>
-      <div class="card-projects"></div>
-      <div class="card-projects"></div>
-      <div class="card-projects"></div>
-      <div class="card-projects"></div>
-      <div class="card-projects"></div>
+<!--      Use flexbox-->
+      <div class="card-projects">
+        <h3>Super Cool Project</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id magni quibusdam ut veniam. Deserunt eius, impedit nihil quae repellendus vel veritatis voluptatem? Aspernatur atque ex illum, officia repudiandae soluta ullam.</p>
+      </div>
+      <div class="card-projects">
+        <h3>Less Cool Project</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id magni quibusdam ut veniam. Deserunt eius, impedit nihil quae repellendus vel veritatis voluptatem? Aspernatur atque ex illum, officia repudiandae soluta ullam.</p>
+      </div>
+      <div class="card-projects">
+        <h3>Impossible App</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id magni quibusdam ut veniam. Deserunt eius, impedit nihil quae repellendus vel veritatis voluptatem? Aspernatur atque ex illum, officia repudiandae soluta ullam.</p>
+      </div>
+      <div class="card-projects">
+        <h3>Easy Peasy App</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id magni quibusdam ut veniam. Deserunt eius, impedit nihil quae repellendus vel veritatis voluptatem? Aspernatur atque ex illum, officia repudiandae soluta ullam.</p>
+      </div>
+      <div class="card-projects">
+        <h3>Ad Blocker</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id magni quibusdam ut veniam. Deserunt eius, impedit nihil quae repellendus vel veritatis voluptatem? Aspernatur atque ex illum, officia repudiandae soluta ullam.</p>
+      </div>
+      <div class="card-projects">
+        <h3>Money Maker</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id magni quibusdam ut veniam. Deserunt eius, impedit nihil quae repellendus vel veritatis voluptatem? Aspernatur atque ex illum, officia repudiandae soluta ullam.</p>
+      </div>
     </div>
 <!--    Use flexbox-->
     <div class="projects-sidebar">
       <div class="announcements">
-        Announcements
+        <p>Announcements</p>
 <!--        Use flexbox-->
         <div class="announce-box">
-          <div class="card-announcements"></div>
-          <div class="card-announcements"></div>
-          <div class="card-announcements"></div>
+          <div class="card-announcements">
+            <h4>Site Maintenance</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id magni quibusdam ut veniam. Deserunt eius, impedit nihil quae repellendus vel veritatis voluptatem? Aspernatur atque ex illum, officia repudiandae soluta ullam.</p>
+          </div>
+          <div class="card-announcements">
+            <h4>Community Share Day</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id magni quibusdam ut veniam. Deserunt eius, impedit nihil quae repellendus vel veritatis voluptatem? Aspernatur atque ex illum, officia repudiandae soluta ullam.</p>
+          </div>
+          <div class="card-announcements">
+            <h4>Updated Privacy Policy</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id magni quibusdam ut veniam. Deserunt eius, impedit nihil quae repellendus vel veritatis voluptatem? Aspernatur atque ex illum, officia repudiandae soluta ullam.</p>
+          </div>
         </div>
       </div>
 <!--      Use flexbox-->
       <div class="trending">
-        Trending
-        <div class="card-trending"></div>
-        <div class="card-trending"></div>
-        <div class="card-trending"></div>
-        <div class="card-trending"></div>
+        <p>Trending</p>
+        <div class="card-trending">
+          <img src="" alt="" class="trending-user">
+          <h5 class="username">@tegan</h5>
+          <p>World Peace Builder</p>
+        </div>
+        <div class="card-trending">
+          <img src="" alt="" class="trending-user">
+          <h5 class="username">@nigel</h5>
+          <p>Super Cool Project</p>
+        </div>
+        <div class="card-trending">
+          <img src="" alt="" class="trending-user">
+          <h5 class="username">@kendall</h5>
+          <p>Life Changing App</p>
+        </div>
+        <div class="card-trending">
+          <img src="" alt="" class="trending-user">
+          <h5 class="username">@alex</h5>
+          <p>No Traffic Maker</p>
+        </div>
       </div>
     </div>
   </div>
