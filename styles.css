@@ -55,6 +55,7 @@ table {
     --main-background: #ffffff;
     --projects-background: #e2e8f0;
     --card-side: #f0b429;
+    font-family: 'Roboto', sans-serif;
 }
 
 img {
@@ -65,7 +66,7 @@ img {
 .container {
     height: 100vh;
     display: grid;
-    grid-template: 0.25fr 1fr / 0.15fr 1fr;
+    grid-template: 0.15fr 1fr / 0.15fr 1fr;
 }
 
 .top {
@@ -76,34 +77,89 @@ img {
     box-shadow: 0px 10px 15px 5px #000000;
 }
 
+.searchbar {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.login {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.username {
+    font-weight: bold;
+    font-size: large;
+}
+
 .search-login {
     display: flex;
     justify-content: space-between;
-    padding-left: 100px;
-    padding-right: 100px;
+    padding-left: 25px;
+    padding-right: 25px;
     margin: 10px;
 }
 
 .searchbar-box {
     border-radius: 20px;
-    width: 500px;
+    height: 25px;
+    width: 600px;
+    background-color: #e2e8f0;
+    border: none;
 }
 
 .user-information {
     display: flex;
     justify-content: space-between;
-    padding-left: 100px;
-    padding-right: 100px;
-    margin: 10px;
+    align-items: center;
+    padding-left: 25px;
+    padding-right: 25px;
+    margin-top: 10px;
+}
+
+.user-image {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.user-greeting {
+    font-weight: bolder;
+}
+
+.part1 {
+    font-size: small;
+    margin-bottom: 5px;
+}
+
+.part2 {
+    font-size: larger;
+}
+
+.user-icon {
+    height: auto;
+    width: 50px;
+    border-radius: 100%;
+}
+
+.user-icon-big {
+    height: auto;
+    width: 80px;
+    border-radius: 100%;
 }
 
 button {
     color: white;
     background-color: var(--sidebar-buttons);
+    font-size: medium;
+    font-weight: bold;
     border-radius: 20px;
     padding: 10px;
     height: 40px;
     width: 100px;
+    border: none;
 }
 
 .user-options {
@@ -140,9 +196,13 @@ button {
     font-size: large;
 }
 
+.card-projects p {
+    font-weight: lighter;
+}
+
 .card-images {
     display: flex;
-    margin-top: 12%;
+    margin-top: 15%;
     margin-left: 75%;
     gap: 20px;
 }
@@ -166,11 +226,26 @@ button {
 .announce-box {
     display: flex;
     flex-direction: column;
-    gap: 10px;
-    border-radius: 20px;
-    padding: 20px;
+    gap: 20px;
+    border-radius: 10px;
+    padding: 30px;
     background-color: var(--main-background);
     border: 1px solid var(--main-background);
+}
+
+.solid {
+    width: 100%;
+    opacity: 25%;
+    border-top: 1px solid #bbb;
+}
+
+.card-announcements h4 {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.card-announcements p {
+    font-weight: lighter;
 }
 
 .trending > p {
@@ -184,16 +259,29 @@ button {
     flex-direction: column;
     gap: 10px;
     padding: 20px;
-    border-radius: 20px;
+    border-radius: 10px;
     background-color: var(--main-background);
     border: 1px solid var(--main-background);
 }
 
 .sidebar {
     background-color: var(--sidebar-buttons);
-    padding: 30px;
+    padding: 30px 30px 30px 15px;
     grid-column: 1 / 1;
     grid-row: 1 / 3;
+}
+
+.dashboard {
+    margin-bottom: 50px;
+}
+
+.dashboard-img {
+    width: 40px;
+}
+
+.dashboard-link {
+    font-size: larger;
+    font-weight: bolder;
 }
 
 .navbar {
@@ -216,5 +304,11 @@ a {
 }
 
 .navbar img, .support-bar img {
-    color: white;
+    width: 30px;
+}
+
+.dashboard, .home, .profile, .messages, .history, .tasks, .communities, .settings, .support, .privacy {
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }

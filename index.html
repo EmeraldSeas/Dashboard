@@ -3,7 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <title>Dashboard</title>
-  <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700;900&display=swap" rel="stylesheet">
 </head>
 <body>
 <!--Use grid-->
@@ -17,16 +20,16 @@
       </div>
       <div class="login">
         <img src="img/icons/notifications_FILL0_wght400_GRAD0_opsz48.svg" alt="" class="notifications">
-        <img src="" alt="" class="user-icon">
+        <img src="img/27316b575048f1a2783b89cc73de1b8d4160b9ff_full.jpg" alt="" class="user-icon">
         <span class="username">Nigel Whipple</span>
       </div>
     </div>
     <div class="user-information">
       <div class="user-image">
-        <img src="" alt="" class="user-icon big">
+        <img src="img/27316b575048f1a2783b89cc73de1b8d4160b9ff_full.jpg" alt="" class="user-icon-big">
         <div class="user-greeting">
-          <p>Hi there,</p>
-          <p>Nigel Whipple (@nigel)</p>
+          <p class="part1">Hi there,</p>
+          <p class="part2">Nigel Whipple (@nigel)</p>
         </div>
       </div>
       <div class="user-options">
@@ -38,13 +41,13 @@
   </div>
 <!--  Use flexbox-->
   <nav class="sidebar">
-    <nav class="logo">
-      <img src="" alt="" class="logo-img">
-      <a href="" class="logo-link"></a>
+    <nav class="dashboard">
+      <img src="img/icons/dashboard_FILL1_wght400_GRAD0_opsz48.svg" alt="" class="dashboard-img">
+      <a href="" class="dashboard-link">Dashboard</a>
     </nav>
     <nav class="navbar">
       <nav class="home">
-        <img src="img/icons/home_FILL0_wght400_GRAD0_opsz48.svg" alt="" class="home-img">
+        <img src="img/icons/home_FILL1_wght400_GRAD0_opsz48.svg" alt="" class="home-img">
         <a href="" class="home-link">Home</a>
       </nav>
       <nav class="profile">
@@ -52,33 +55,33 @@
         <a href="" class="profile-link">Profile</a>
       </nav>
       <nav class="messages">
-        <img src="img/icons/mode_comment_FILL0_wght400_GRAD0_opsz48.svg" alt="" class="messages-img">
+        <img src="img/icons/mode_comment_FILL1_wght400_GRAD0_opsz48.svg" alt="" class="messages-img">
         <a href="" class="messages-link">Messages</a>
       </nav>
       <nav class="history">
-        <img src="img/icons/history_FILL0_wght400_GRAD0_opsz48.svg" alt="" class="history-img">
+        <img src="img/icons/history_FILL1_wght400_GRAD0_opsz48.svg" alt="" class="history-img">
         <a href="" class="history-link">History</a>
       </nav>
       <nav class="tasks">
-        <img src="img/icons/task_FILL0_wght400_GRAD0_opsz48.svg" alt="" class="tasks-img">
+        <img src="img/icons/task_FILL1_wght400_GRAD0_opsz48.svg" alt="" class="tasks-img">
         <a href="" class="tasks-link">Tasks</a>
       </nav>
       <nav class="communities">
-        <img src="img/icons/groups_FILL0_wght400_GRAD0_opsz48.svg" alt="" class="communities-img">
+        <img src="img/icons/groups_FILL1_wght400_GRAD0_opsz48.svg" alt="" class="communities-img">
         <a href="" class="communities-link">Communities</a>
       </nav>
     </nav>
     <nav class="support-bar">
       <nav class="settings">
-        <img src="img/icons/settings_FILL0_wght400_GRAD0_opsz48.svg" alt="" class="settings-img">
+        <img src="img/icons/settings_FILL1_wght400_GRAD0_opsz48.svg" alt="" class="settings-img">
         <a href="" class="settings-link">Settings</a>
       </nav>
       <nav class="support">
-        <img src="img/icons/live_help_FILL0_wght400_GRAD0_opsz48.svg" alt="" class="support-img">
+        <img src="img/icons/live_help_FILL1_wght400_GRAD0_opsz48.svg" alt="" class="support-img">
         <a href="" class="support-link">Support</a>
       </nav>
       <nav class="privacy">
-        <img src="img/icons/verified_user_FILL0_wght400_GRAD0_opsz48.svg" alt="" class="privacy-img">
+        <img src="img/icons/verified_user_FILL1_wght400_GRAD0_opsz48.svg" alt="" class="privacy-img">
         <a href="" class="privacy-link">Privacy</a>
       </nav>
     </nav>
@@ -154,10 +157,12 @@
             <h4>Site Maintenance</h4>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id magni quibusdam ut veniam. Deserunt eius, impedit nihil quae repellendus vel veritatis voluptatem? Aspernatur atque ex illum, officia repudiandae soluta ullam.</p>
           </div>
+          <hr class="solid">
           <div class="card-announcements">
             <h4>Community Share Day</h4>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id magni quibusdam ut veniam. Deserunt eius, impedit nihil quae repellendus vel veritatis voluptatem? Aspernatur atque ex illum, officia repudiandae soluta ullam.</p>
           </div>
+          <hr class="solid">
           <div class="card-announcements">
             <h4>Updated Privacy Policy</h4>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id magni quibusdam ut veniam. Deserunt eius, impedit nihil quae repellendus vel veritatis voluptatem? Aspernatur atque ex illum, officia repudiandae soluta ullam.</p>
@@ -169,22 +174,22 @@
         <p>Trending</p>
         <div class="trending-box">
         <div class="card-trending">
-          <img src="" alt="" class="trending-user">
+          <img src="img/27316b575048f1a2783b89cc73de1b8d4160b9ff_full.jpg" alt="" class="trending-user">
           <h5>@tegan</h5>
           <p>World Peace Builder</p>
         </div>
         <div class="card-trending">
-          <img src="" alt="" class="trending-user">
+          <img src="img/27316b575048f1a2783b89cc73de1b8d4160b9ff_full.jpg" alt="" class="trending-user">
           <h5>@nigel</h5>
           <p>Super Cool Project</p>
         </div>
         <div class="card-trending">
-          <img src="" alt="" class="trending-user">
+          <img src="img/27316b575048f1a2783b89cc73de1b8d4160b9ff_full.jpg" alt="" class="trending-user">
           <h5>@kendall</h5>
           <p>Life Changing App</p>
         </div>
         <div class="card-trending">
-          <img src="" alt="" class="trending-user">
+          <img src="img/27316b575048f1a2783b89cc73de1b8d4160b9ff_full.jpg" alt="" class="trending-user">
           <h5>@alex</h5>
           <p>No Traffic Maker</p>
         </div>
