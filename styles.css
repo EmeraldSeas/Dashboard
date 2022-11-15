@@ -114,6 +114,7 @@ button {
 .content {
     background-color: var(--projects-background);
     padding: 10px;
+    gap: 20px;
     display: grid;
     grid-template: 1fr .5fr / 2fr 1fr;
 }
@@ -129,9 +130,21 @@ button {
 
 .card-projects {
     background-color: var(--main-background);
-    border: 1px solid var(--main-background);
-    border-radius: 20px;
+    border-left: 10px solid var(--card-side);
+    border-radius: 10px;
     padding: 20px;
+}
+
+.card-projects > h3 {
+    font-weight: bolder;
+    font-size: large;
+}
+
+.card-images {
+    display: flex;
+    margin-top: 12%;
+    margin-left: 75%;
+    gap: 20px;
 }
 
 .projects-sidebar {
