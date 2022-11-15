@@ -3,335 +3,427 @@
    License: none (public domain)
 */
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    font-size: 100%;
-    font: inherit;
-    vertical-align: baseline;
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
-    display: block;
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
 }
 body {
-    line-height: 1;
+  line-height: 1;
 }
-ol, ul {
-    list-style: none;
+ol,
+ul {
+  list-style: none;
 }
-blockquote, q {
-    quotes: none;
+blockquote,
+q {
+  quotes: none;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
-    content: '';
-    content: none;
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
 }
 table {
-    border-collapse: collapse;
-    border-spacing: 0;
+  border-collapse: collapse;
+  border-spacing: 0;
 }
 /*Reset done*/
 
 /*color variables for future dark mode*/
 /*TODO: add dark mode*/
 :root {
-    --sidebar-buttons: #1992d4;
-    --main-background: #ffffff;
-    --projects-background: #e2e8f0;
-    --card-side: #f0b429;
-    font-family: 'Roboto', sans-serif;
+  --sidebar-buttons: #1992d4;
+  --main-background: #ffffff;
+  --projects-background: #e2e8f0;
+  --card-side: #f0b429;
+  font-family: "Roboto", sans-serif;
 }
 
 img {
-    height: auto;
-    width: 25px;
+  height: auto;
+  width: 25px;
 }
 
 .container {
-    height: 100vh;
-    display: grid;
-    grid-template: 0.15fr 1fr / 0.15fr 1fr;
+  height: 100vh;
+  display: grid;
+  grid-template: 0.15fr 1fr / 0.15fr 1fr;
 }
 
 .top {
-    background-color: var(--main-background);
-    padding: 10px;
-    display: flex;
-    flex-direction: column;
-    box-shadow: 0px 10px 15px 5px #000000;
+  background-color: var(--main-background);
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0px 10px 15px 5px #000000;
 }
 
 .searchbar {
-    display: flex;
-    gap: 10px;
-    align-items: center;
+  display: flex;
+  gap: 10px;
+  align-items: center;
 }
 
 .login {
-    display: flex;
-    align-items: center;
-    gap: 20px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
 }
 
 .username {
-    font-weight: bold;
-    font-size: large;
+  font-weight: bold;
+  font-size: large;
 }
 
 .search-login {
-    display: flex;
-    justify-content: space-between;
-    padding-left: 25px;
-    padding-right: 25px;
-    margin: 10px;
+  display: flex;
+  justify-content: space-between;
+  padding-left: 25px;
+  padding-right: 25px;
+  margin: 10px;
 }
 
 .searchbar-box {
-    border-radius: 20px;
-    height: 25px;
-    width: 600px;
-    background-color: #e2e8f0;
-    border: none;
+  border-radius: 20px;
+  height: 25px;
+  width: 600px;
+  background-color: #e2e8f0;
+  border: none;
 }
 
 .user-information {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-left: 25px;
-    padding-right: 25px;
-    margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 25px;
+  padding-right: 25px;
+  margin-top: 10px;
 }
 
 .user-image {
-    display: flex;
-    align-items: center;
-    gap: 20px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
 }
 
 .user-greeting {
-    font-weight: bolder;
+  font-weight: bolder;
 }
 
 .part1 {
-    font-size: small;
-    margin-bottom: 5px;
+  font-size: small;
+  margin-bottom: 5px;
 }
 
 .part2 {
-    font-size: larger;
+  font-size: larger;
 }
 
 .user-icon {
-    height: auto;
-    width: 50px;
-    border-radius: 100%;
+  height: auto;
+  width: 50px;
+  border-radius: 100%;
 }
 
 .user-icon-big {
-    height: auto;
-    width: 80px;
-    border-radius: 100%;
+  height: auto;
+  width: 80px;
+  border-radius: 100%;
 }
 
 button {
-    color: white;
-    background-color: var(--sidebar-buttons);
-    font-size: medium;
-    font-weight: bold;
-    border-radius: 20px;
-    padding: 10px;
-    height: 40px;
-    width: 100px;
-    border: none;
+  color: white;
+  background-color: var(--sidebar-buttons);
+  font-size: medium;
+  font-weight: bold;
+  border-radius: 20px;
+  padding: 10px;
+  height: 40px;
+  width: 100px;
+  border: none;
 }
 
 .user-options {
-    display: flex;
-    gap: 10px;
+  display: flex;
+  gap: 10px;
 }
 
 .content {
-    background-color: var(--projects-background);
-    padding: 10px;
-    gap: 20px;
-    display: grid;
-    grid-template: 1fr .5fr / 2fr 1fr;
+  background-color: var(--projects-background);
+  padding: 10px;
+  gap: 20px;
+  display: grid;
+  grid-template: 1fr 0.5fr / 2fr 1fr;
 }
 
 .projects {
-    grid-column: 1 / 1;
-    grid-row: 1 / 3;
-    display: grid;
-    grid-template: 1fr 1fr 1fr / 1fr 1fr;
-    gap: 30px;
-    margin: 10px;
+  grid-column: 1 / 1;
+  grid-row: 1 / 3;
+  display: grid;
+  grid-template: 1fr 1fr 1fr / 1fr 1fr;
+  gap: 30px;
+  margin: 10px;
 }
 
 .card-projects {
-    background-color: var(--main-background);
-    border-left: 10px solid var(--card-side);
-    border-radius: 10px;
-    padding: 20px;
-    position: relative;
+  background-color: var(--main-background);
+  border-left: 10px solid var(--card-side);
+  border-radius: 10px;
+  padding: 20px;
+  position: relative;
 }
 
 .card-projects > h3 {
-    font-weight: bolder;
-    font-size: large;
+  font-weight: bolder;
+  font-size: large;
+  margin-bottom: 5px;
 }
 
 .card-projects p {
-    font-weight: lighter;
+  font-weight: lighter;
 }
 
 .card-images {
-    display: flex;
-    position: absolute;
-    bottom: 25px;
-    right: 25px;
-    gap: 20px;
+  display: flex;
+  position: absolute;
+  bottom: 25px;
+  right: 25px;
+  gap: 20px;
 }
 
 .projects-sidebar {
-    grid-row: 1 / 3;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    gap: 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+  grid-row: 1 / 3;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  gap: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .announcements > p {
-    margin-bottom: 25px;
-    font-weight: bold;
-    font-size: large;
+  margin-bottom: 25px;
+  font-weight: bold;
+  font-size: large;
 }
 
 .announce-box {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    border-radius: 10px;
-    padding: 30px;
-    background-color: var(--main-background);
-    border: 1px solid var(--main-background);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  border-radius: 10px;
+  padding: 30px;
+  background-color: var(--main-background);
+  border: 1px solid var(--main-background);
 }
 
 .solid {
-    width: 100%;
-    opacity: 25%;
-    border-top: 1px solid #bbb;
+  width: 100%;
+  opacity: 25%;
+  border-top: 1px solid #bbb;
 }
 
 .card-announcements h4 {
-    font-weight: bold;
-    margin-bottom: 5px;
+  font-weight: bold;
+  margin-bottom: 5px;
 }
 
 .card-announcements p {
-    font-weight: lighter;
+  font-weight: lighter;
 }
 
 .trending > p {
-    margin-bottom: 25px;
-    font-weight: bold;
-    font-size: large;
+  margin-bottom: 25px;
+  font-weight: bold;
+  font-size: large;
 }
 
 .trending-box {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    padding: 20px;
-    border-radius: 10px;
-    background-color: var(--main-background);
-    border: 1px solid var(--main-background);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: var(--main-background);
+  border: 1px solid var(--main-background);
 }
 
 .card-trending {
-    display: flex;
-    align-items: center;
-    gap: 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 
 .trending-user {
-    height: auto;
-    width: 50px;
-    border-radius: 100%;
+  height: auto;
+  width: 50px;
+  border-radius: 100%;
 }
 
 .project-info h5 {
-    font-weight: bold;
-    margin-bottom: 5px;
+  font-weight: bold;
+  margin-bottom: 5px;
 }
 
 .project-info p {
-    font-weight: lighter;
+  font-weight: lighter;
 }
 
 .sidebar {
-    background-color: var(--sidebar-buttons);
-    padding: 30px 30px 30px 15px;
-    grid-column: 1 / 1;
-    grid-row: 1 / 3;
+  background-color: var(--sidebar-buttons);
+  padding: 30px 30px 30px 15px;
+  grid-column: 1 / 1;
+  grid-row: 1 / 3;
 }
 
 .dashboard {
-    margin-bottom: 50px;
+  margin-bottom: 50px;
 }
 
 .dashboard-img {
-    width: 40px;
+  width: 40px;
 }
 
 .dashboard-link {
-    font-size: larger;
-    font-weight: bolder;
+  font-size: larger;
+  font-weight: bolder;
 }
 
 .navbar {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    margin-bottom: 100px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 100px;
 }
 
 .support-bar {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
 a {
-    color: white;
-    text-decoration: none;
-    font-weight: bolder;
+  color: white;
+  text-decoration: none;
+  font-weight: bolder;
 }
 
-.navbar img, .support-bar img {
-    width: 30px;
+.navbar img,
+.support-bar img {
+  width: 30px;
 }
 
-.dashboard, .home, .profile, .messages, .history, .tasks, .communities, .settings, .support, .privacy {
-    display: flex;
-    align-items: center;
-    gap: 10px;
+.dashboard,
+.home,
+.profile,
+.messages,
+.history,
+.tasks,
+.communities,
+.settings,
+.support,
+.privacy {
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
